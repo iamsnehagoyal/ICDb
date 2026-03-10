@@ -1,0 +1,36 @@
+{
+  "name": "icdb_api",
+  "version": "0.1.0",
+  "description": "ICDb API",
+  "main": "dist/icdb/main.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "ts-node src/icdb/main.ts",
+    "start": "node dist/icdb/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST",
+    "API"
+  ],
+  "author": "Sneha Goyal <snehagoyal214@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "commander": "^14.0.3",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.2",
+    "mongoose": "^9.2.4",
+    "morgan": "^1.10.1",
+    "read": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.6",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^25.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
