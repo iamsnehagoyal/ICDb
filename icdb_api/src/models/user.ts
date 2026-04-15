@@ -8,13 +8,13 @@ import {
     HydratedDocument
 } from 'mongoose';
 
-import { Token, User } from '../interfaces/user';
+import { Token, User } from '../interfaces/entities/user';
 
 type UserDocument = HydratedDocument<User>;
 
 const tokenSchema: Schema<Token> = new Schema(
     {
-        key: { type: String, required: true, unique: true },
+        key: { type: String, unique: true, sparse: true },
     },
     { timestamps: { createdAt: 'created' } },
 );

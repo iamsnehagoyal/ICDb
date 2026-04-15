@@ -1,9 +1,11 @@
+import { Document } from "mongoose";
+
 export interface Token {
     key: string;
     created?: Date;
 }
 
-export interface User {
+export interface User extends Document {
     email: string;
     firstName: string;
     lastName: string;
@@ -13,5 +15,5 @@ export interface User {
     dateJoined: Date;
     lastLogin?: Date;
     token?: Token;
-    validatePassword(confirmPassword: string): boolean;
+    validatePassword(confirmPassword: string): Promise<boolean>;
 }

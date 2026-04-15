@@ -2,7 +2,7 @@ import { STATUS_CODES } from 'http';
 
 import { Response, Request, NextFunction } from 'express';
 
-import { User } from '../interfaces/user';
+import { User } from '../interfaces/entities/user';
 import { UserModel } from '../models';
 
 declare global {

@@ -1,3 +1,4 @@
 import * as helloController from "./hello";
+import * as authController from "./auth";
 
-export { helloController };
+export { helloController, authController };
